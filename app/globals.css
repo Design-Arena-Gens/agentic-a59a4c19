@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+a {
+  @apply text-ocean-300 underline-offset-4 hover:text-ocean-200 hover:underline;
+}
+
+body {
+  @apply min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950;
+}
+
+.section-container {
+  @apply mx-auto w-full max-w-6xl px-6 py-16;
+}
+
+.glass {
+  @apply rounded-3xl border border-white/10 bg-white/5 shadow-xl backdrop-blur-xl;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-ocean-200 via-ocean-400 to-ocean-200 bg-clip-text text-transparent;
+}
+
+.card-grid {
+  @apply grid gap-6 sm:grid-cols-2 xl:grid-cols-3;
+}
+
+.card {
+  @apply glass flex h-full flex-col gap-4 p-6 transition duration-300 hover:-translate-y-1 hover:border-ocean-400/40 hover:shadow-2xl;
+}
+
+.card-title {
+  @apply text-lg font-semibold text-white;
+}
+
+.card-meta {
+  @apply text-sm text-slate-300;
+}
+
+.card-action {
+  @apply mt-auto inline-flex w-fit items-center gap-2 text-sm font-semibold text-ocean-200;
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 rounded-full bg-ocean-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-ocean-500/30 transition hover:bg-ocean-400 hover:shadow-ocean-400/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ocean-200;
+}
+
+.surface {
+  @apply glass border-white/5 bg-slate-950/60;
+}
+
+.title-shape {
+  @apply absolute -top-10 right-14 h-24 w-24 rounded-full bg-ocean-400/30 blur-3xl;
+}
